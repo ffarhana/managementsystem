@@ -1,6 +1,7 @@
 # Laravel SB Admin 2
+# adding modules 1 staff management
 
-SB Admin 2 for Laravel.
+
 
 | Laravel Version | Branch | Support             |
 |-----------------|--------|---------------------|
