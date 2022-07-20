@@ -1,3 +1,4 @@
+# Laravel management system
 # Laravel SB Admin 2
 # adding modules 1 staff management
 
@@ -13,12 +14,4 @@
 ## Requirements
 
 - PHP >= 7.3.0
-- BCMath PHP Extension
-- Ctype PHP Extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
 
