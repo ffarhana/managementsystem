@@ -1,7 +1,12 @@
-@extends('layouts.auth')
+@extends('layouts.admin')
 
 @section('main-content')
-<div class="container">
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Create Users</h1>
+    </div>
+    <div class="container">
     <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-9">
             <div class="card o-hidden border-0 shadow-lg my-5">
@@ -24,7 +29,7 @@
                                     </div>
                                 @endif
 
-                                <form method="POST" action="{{ route('register') }}" class="user">
+                                <form method="POST" action="{{ route('users.store') }}" class="user">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                     <div class="form-group">
@@ -73,4 +78,6 @@
         </div>
     </div>
 </div>
-@endsection
+
+
+    @endsection

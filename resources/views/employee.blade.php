@@ -86,16 +86,10 @@
 
                         <div class="pl-lg-4">
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group focused">
-                                        <label class="form-control-label" for="username">User Name<span class="small text-danger">*</span></label>
-                                        <input type="text" id="username" class="form-control" name="username" placeholder="Name" value="{{ old('username', Auth::user()->username) }}">
-                                    </div>
-                                </div>
                                 <div class="col-lg-6">
                                     <div class="form-group focused">
-                                        <label class="form-control-label" for="first_name">First name</label>
-                                        <input type="text" id="first_name" class="form-control" name="first_name" placeholder="First name" value="{{ old('first_name', Auth::user()->first_name) }}">
+                                        <label class="form-control-label" for="name">Name<span class="small text-danger">*</span></label>
+                                        <input type="text" id="name" class="form-control" name="name" placeholder="Name" value="{{ old('name', Auth::user()->name) }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

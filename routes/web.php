@@ -1,7 +1,12 @@
 <?php
 
+
+
 use Illuminate\Support\Facades\Route;
 
+Use App\Http\Controllers\ProductController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\Backend\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +28,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
+Route::resource('employees', EmployeeController::class);
+Route::resource('products', '\App\Http\Controllers\ProductController');
+Route::resource('users', '\App\Http\Controllers\Backend\UserController');
 
 Route::get('/about', function () {
     return view('about');
